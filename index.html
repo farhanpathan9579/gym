@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,11 +10,16 @@
 <style>
 body  {
       
-       / background-image: url ("https://cdn.dribbble.com/users/4027971/screenshots/14409183/media/dc9e27f8aa3577e5993a9757e63
-       7d59f.gif" );
-           background-repeat:no-repeat;
-           backg.round-size:cover;      
+       background-image: url ("https://cdn.dribbble.com/users/4027971/screenshots/14409183/media/dc9e27f8aa3577e5993a9757e637d59f.gif");
+       background-repeat: no-repeat;
+       background-size: cover;
+       height:500 px;
+       background-position: center;
+       object-fit: cover;
+       width: 100 %;
+
            }
+
            h1 { 
            color:#000000;
            }
@@ -23,49 +28,43 @@ button {
   background-color: #454545; /* Green */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15 px 32 px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 16 px;
 }
  img{
-  border-radius: 45%;
-   
+  border-radius: 45 % ;
+ } 
   img{
     
-    animation-name:infiniteupdown;
-    animation-duration: 3s;
-    animation-iteration:count:infinite;
-    animation-timing-function:ease;
-    transition:all.3s;
+    animation:infiniteupdown 3 s infinite forwards ease-in-out;
+    transition:all.3 s;
      }
      
-     @keyframe Infiniteupdown {
-     
-       transform:translater (0px);
+ @ keyframes infiniteupdown {
+    
+    0 %{
+         transform:translater (0 px);
      }
-     
-     50% {
-     
-      transform:translater (-40px);
-      
+     50 %{
+      transform:translater (-40 px);
      }
-    100% {
-      
-      transform:translater(0px);
+    100 % {
+      transform: translater (0 px);
     }
 }
 button{
-             width: 150px;
-             height: 100px;
-             border: 1px   #454545;
-             animation: mymove 6s infinite;
+             width: 150 px;
+             height: 100 px;
+             border: 1 px   #454545;
+             animation: mymove 6 s infinite;
              }
              
              
-             @keyframes mymove {
-             50% {border-bottom-right-radius: 200px;}
+             @ keyframes mymove {
+             50 % {border-bottom-right-radius: 200 px;}
              }
 
 
@@ -84,4 +83,3 @@ button{
 
 </body>
 </html>
-
