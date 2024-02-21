@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -10,11 +10,16 @@
 <style>
 body  {
       
-       / background-image: url ("https://cdn.dribbble.com/users/4027971/screenshots/14409183/media/dc9e27f8aa3577e5993a9757e63
-       7d59f.gif" );
-           background-repeat:no-repeat;
-           backg.round-size:cover;      
+       background-image: url ("https://cdn.dribbble.com/users/4027971/screenshots/14409183/media/dc9e27f8aa3577e5993a9757e637d59f.gif");
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 500px;
+       background-position: center;
+       object-fit: cover;
+       width: 100%;
+
            }
+
            h1 { 
            color:#000000;
            }
@@ -31,28 +36,22 @@ button {
 }
  img{
   border-radius: 45%;
-   
+ } 
   img{
     
-    animation-name:infiniteupdown;
-    animation-duration: 3s;
-    animation-iteration:count:infinite;
-    animation-timing-function:ease;
+    animation:infiniteupdown 3s infinite forwards ease-in-out;
     transition:all.3s;
      }
      
-     @keyframe Infiniteupdown {
-     
-       transform:translater (0px);
+@keyframes infiniteupdown {
+    
+    0%{
+         transform:translater (0px);
      }
-     
-     50% {
-     
+     50%{
       transform:translater (-40px);
-      
      }
     100% {
-      
       transform:translater(0px);
     }
 }
@@ -84,4 +83,3 @@ button{
 
 </body>
 </html>
-
